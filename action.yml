@@ -1,0 +1,24 @@
+name: "Fanfou mark sync"
+author: "Austin Lee"
+description: "Fanfou marked data sync to csv or json action"
+
+inputs:
+  id:
+    description: "Your fanfou id"
+    required: true
+  format:
+    description: "Fanfou data store format, enum value：`csv`, `json`, default `json`"
+    default: csv
+    required: false
+  dir:
+    description: "Target where fanfou data sync to. It's a file path for `csv` and `json` format."
+    default: ./
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "activity"
+  color: "green"
