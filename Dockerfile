@@ -1,4 +1,4 @@
-FROM binjoo/fantong
+FROM binjoo/fantong:latest
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
