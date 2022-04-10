@@ -3,8 +3,8 @@ author: "Austin Lee"
 description: "Fanfou marked data sync to csv or json action"
 
 inputs:
-  id:
-    description: "Your fanfou id"
+  username:
+    description: "your fanfou username"
     required: true
   format:
     description: "Fanfou data store format, enum value：`csv`, `json`, default `json`"
@@ -13,7 +13,7 @@ inputs:
   dir:
     description: "Target where fanfou data sync to. It's a file path for `csv` and `json` format."
     default: ./
-    required: true
+    required: false
 
 runs:
   using: "docker"
